@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa6'
 
-interface PaidPlanCardProps {
+type Props = {
   title: string
   description: string
   includedFeatures: string[]
@@ -15,7 +15,8 @@ export default function PaidPlanCard({
   includedFeatures,
   priceTitle,
   price
-}: PaidPlanCardProps) {
+}: Props) {
+  // Changed Interface To Type (I'm normal)
   return (
     <div className="mx-auto mt-16 max-w-2xl rounded-3xl ring-1 ring-brown-200 sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
       <div className="p-8 sm:p-10 lg:flex-auto">
